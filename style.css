@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #014E56;
+    padding: 40px;
+    padding-bottom: 90px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__menus {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style: none;
+}
+
+.header__menus a {
+    text-decoration: none;
+    font-family: Livvic;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+    color: white;
+}
+
+.header__btn {
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: white;
+    background-color: #014E56;
+    border: 1px solid white;
+}
+
+.header__btn:hover {
+    background-color: white;
+    color: #014E56;
+}
+
+main {
+    background-color: #014E56;
+    /* padding: 100px; */
+}
+
+.hero {
+    padding-bottom: 120px;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    color: white;
+    font-family: Livvic;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 100px;
+    text-align: left;
+}
+
+.hero__p {
+    font-family: Livvic;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+    color: white;
+}
+
+.directors {
+    background-color: #004047;
+    padding-bottom: 90px;
+}
+
+.directors h2 {
+    font-family: Livvic;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+    color: white;
+    padding: 50px;
+}
+
+.directors2 {
+    width: 330px;
+    height: 270px;
+    background-color: #012F34;
+    position: relative;
+}
+
+.directors2 img {
+    padding-left: 120px;
+    padding-top: 50px;
+}
+
+.directors h3 {
+    font-family: Livvic;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    color: #79C8C7;
+}
+
+.directors2 p {
+    font-family: Livvic;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: white;
+}
+
+.directors2 button {
+    background-color: #F67E7E;
+    padding: 15px;
+    border: none;
+    border-radius: 500px;
+    position: absolute;
+    left: 150px;
+    bottom: -20px;
+}
+
+.directors1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.homiylar {
+    background-color: #012F34;
+}
+
+.homiylar h2 {
+    font-family: Livvic;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+}
+
+.homiylar__photo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 65px;
+}
+
+.start {
+    background-color: #F67E7E;
+    padding: 100px;
+}
+
+.start .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.start h2 {
+    font-family: Livvic;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    text-align: left;
+}
+
+.start button {
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: black;
+    background-color: #F67E7E;
+    border: 1px solid black;
+}
+
+.start button:hover {
+    color: #F67E7E;
+    background-color: black;
+}
+
+footer {
+    background-color: #002529;
+    padding: 40px;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logos {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 25px;
+}
+
+.header__b {
+    display: none;
+}
+
+
+
+
+@media(max-width:770px) {
+    .hero .container {
+        flex-direction: column;
+    }
+
+    .directors1 {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .homiylar__photo {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media(max-width:550px) {
+    .header__b {
+        display: block;
+        background-color: inherit;
+        color: white;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero__p {
+        font-size: 15px;
+        max-width: 90%;
+    }
+
+    .start .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media(max-width:550px) {
+    footer .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
